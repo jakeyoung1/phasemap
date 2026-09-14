@@ -1,0 +1,25 @@
+<div class="app">
+  <section class="board" aria-label="Phase replay">
+    <nav class="goals" id="goals" aria-label="Phases in this report" hidden></nav>
+    <header class="scorebar" id="scorebar"></header>
+    <div class="pitch-wrap">
+      <canvas class="pitch" id="pitch" width="2260" height="1520" role="img"
+        aria-label="Top-down replay of the phase. Click to play or pause."></canvas>
+    </div>
+    <div class="controls">
+      <button class="btn" id="play" type="button" aria-pressed="false">Play</button>
+      <button class="btn" id="speed" type="button" aria-label="Playback speed">1x</button>
+      <div class="timeline">
+        <div class="ticks" id="ticks"></div>
+        <input type="range" id="scrub" min="0" max="0" step="1" value="0" aria-label="Replay time">
+      </div>
+      <span class="clock" id="clock"></span>
+    </div>
+    <p class="selected" id="selected" aria-live="polite"></p>
+  </section>
+  <main class="notes" id="notes"></main>
+</div>
+<script id="phase-data" type="application/json">{{DATA}}</script>
+<script>
+{{JS}}
+</script>
