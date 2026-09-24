@@ -1,5 +1,7 @@
 # PhaseMap
 
+[![CI](https://github.com/jakeyoung1/phasemap/actions/workflows/ci.yml/badge.svg)](https://github.com/jakeyoung1/phasemap/actions/workflows/ci.yml)
+
 PhaseMap explains why a soccer attack ended the way it did, and shows its working.
 
 It reads player and ball tracking data, measures one possession phase in detail, then asks Claude to write a tactical breakdown. Every claim in that breakdown has to cite the measurements it rests on, and PhaseMap checks each claim against them before it reaches the report.
